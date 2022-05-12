@@ -47,7 +47,8 @@ def get_string_to_cut():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
-	app.jinja_env.auto_reload = True
+	app.run()
+	# app.run(debug=True)
+	# app.jinja_env.auto_reload = True
 	
 	

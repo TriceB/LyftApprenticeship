@@ -1,18 +1,18 @@
-#Lyft Interview Test
+# Lyft Interview Test
 *This is a submission for the Software Engineering Apprenticeship (2022)*
 
 ---
-##Description
+## Description
 This is a web application that will cut a string by pulling out every 3rd letter in the string submitted.
 It accepts a POST request using the argument "string_to_cut" where the user will fill in the string they would like to be cut.
 The program will return a JSON object with the key "return_string" and a value with resulting string.
 
 To test this out, you may run the code below by either running the Curl command, running the Python code below or by using Postman (instruction below).
 
-###Curl
+### Curl
 `curl --location --request POST 'https://lyftsweapprenticeship.herokuapp.com/test' --header 'Content-Type: application/json' --data-raw '{"string_to_cut": "iamyourlyftdriver"}'`
 
-###Python
+### Python
 ```
 import requests
 
@@ -25,7 +25,7 @@ r = requests.post('https://lyftsweapprenticeship.herokuapp.com/test', headers=he
 print(r.text)
 ```
 
-###Postman
+### Postman
 1. Add a new request tab
 2. Change the Request type to "POST" in the dropdown
 3. Enter the URL <https://lyftsweapprenticeship.herokuapp.com/test>
@@ -37,4 +37,4 @@ print(r.text)
 9. You will then see the results in the bottom panel
 
 
-###Thank you for your time and consideration.
+### Thank you for your time and consideration.
